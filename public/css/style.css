@@ -1,0 +1,80 @@
+
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.password {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.password {
+     display: block;
+     float: none;
+  }
+}
+
+a {
+    color:#33348e;
+    text-decoration:none;
+}
+
+nav {
+    background-color:#33348e;
+    font-family:verdana,arial,times,serif;
+    font-size:.875em;
+    overflow:hidden;
+    padding-left:4%;
+}
+nav ul {
+    padding:0;
+    margin:0;
+}
+nav ul li {
+    list-style-type:none;
+    float:left;
+    position:relative;
+    padding:0;
+    margin:0;
+}
+nav ul li a {
+    display:block;
+    color:#fff;
+    padding:.875em .625em;
+    margin:0;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color:#fff;
+    color:#33348e;
+    text-decoration:underline;
+    font-weight:normal;
+}
+

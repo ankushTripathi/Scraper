@@ -40,19 +40,19 @@ class CurlClient implements IClient{
 
         try {
 
-            $result = curl_exec($curl_handler);
+            $result = curl_exec($this->curl_handler);
             $response->status_code = curl_getinfo($this->curl_handler, CURLINFO_HTTP_CODE); 
 
         } catch (Exception $e) {
             
-            if(curl_errno($curl_handler))
+            if(curl_errno($this->curl_handler))
             {
-                echo curl_error($curl_handler);
+                echo curl_error($this->curl_handler);
             }
         }
         finally{
 
-            curl_close($curl_handler);
+            curl_close($this->curl_handler);
         }
 
         $response->payload = $result;

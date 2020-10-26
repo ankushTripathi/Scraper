@@ -1,4 +1,4 @@
 <?php
 
-require_once "./simple_html_dom/autoload.php";
-require_once "./scraper/autoload.php";
+require_once __DIR__."/simple_html_dom/autoload.php";
+require_once __DIR__."/scraper/autoload.php";
